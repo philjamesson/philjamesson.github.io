@@ -56,7 +56,7 @@
         var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
         // Generate story text - loop through available content
-        while(story.canContinue) {
+        if(story.canContinue) {
 
             // Get ink to generate the next paragraph
             var paragraphText = story.Continue();
